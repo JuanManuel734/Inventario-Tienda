@@ -76,7 +76,7 @@ const CONCEPTOS=[['Tipos e inmutabilidad','Producto, Movimiento y Estado son Nam
 ['Comprensiones','listas, conjuntos y diccionarios en payload, histograma y errores'],
 ['Recursividad y árboles','construir_arbol, altura, valor_arbol, buscar (nodo = producto, izquierda, derecha)'],
 ['Generadores / evaluación perezosa','generar_skus (infinito), inorden (yield from), recientes (islice)'],
-['Beneficio de la inmutabilidad','Deshacer y Rehacer: los estados anteriores se conservan intactos'],['Persistencia MySQL','Productos y movimientos se guardan en las tablas productos y movimientos']];
+['Beneficio de la inmutabilidad','Deshacer y Rehacer: los estados anteriores se conservan intactos'],['Persistencia Firebird','Productos y movimientos se guardan en las tablas productos y movimientos']];
 let D=null,tab='inv',editando=null,movSku=null;
 function setTab(t){tab=t;document.querySelectorAll('.sec').forEach(s=>s.style.display=s.id=='t_'+t?'':'none');$('#tabs').innerHTML=TABS.map(([k,n])=>`<button class="${k==t?'on':''}" onclick="setTab('${k}')">${n}</button>`).join('')}
 async function cargar(){
